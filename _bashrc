@@ -24,3 +24,5 @@ else
 fi
 
 PS1="$GREEN[$USER_COLOR\u$CYAN@$YELLOW\h$GREEN] $ORANGE:$CYAN\w$GREY\$ $NO_COLOR"
+
+export EDITOR=vi
