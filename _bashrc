@@ -5,6 +5,12 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
+#MacOS is different - set some variables.
+if [ "$(uname)" == "Darwin" ]; then
+	export CLICOLOR=1
+	alias ls='ls -GFh'
+fi
+
 # User specific aliases and functions
 LS_COLORS='di=01;35:fi=00:ln=01;36'
 # Prompt Stuff below
@@ -25,4 +31,4 @@ fi
 
 PS1="$GREEN[$USER_COLOR\u$CYAN@$YELLOW\h$GREEN] $ORANGE:$CYAN\w$GREY\$ $NO_COLOR"
 
-export EDITOR=vi
+export EDITOR=vim
