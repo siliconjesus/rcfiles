@@ -32,3 +32,8 @@ fi
 PS1="$GREEN[$USER_COLOR\u$CYAN@$YELLOW\h$GREEN] $ORANGE:$CYAN\w$GREY\$ $NO_COLOR"
 
 export EDITOR=vim
+
+#Support for MacOS brew installation path of gnu utilities
+if [ "$(uname)" == "Darwin" ] && [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
+	PATH=/usr/local/bin;/usr/local/opt/coreutils/libexec/gnubin:$PATH
+fi
