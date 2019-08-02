@@ -34,9 +34,9 @@ PS1="$GREEN[$USER_COLOR\u$CYAN@$YELLOW\h$GREEN] $ORANGE:$CYAN\w$GREY\$ $NO_COLOR
 export EDITOR=vim
 
 # Remove Aliases
-unalias ls
-unalias ll
-unalias rm
+#unalias ls
+#unalias ll
+#unalias rm
 
 # Add aliases
 alias ls="ls --color=auto"
