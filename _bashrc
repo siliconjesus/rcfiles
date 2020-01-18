@@ -45,3 +45,6 @@ alias ls="ls --color=auto"
 #if [ "$(uname)" == "Darwin" ] && [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
 #	PATH=/usr/local/bin;/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #fi
+
+export PATH=$PATH:~/minishift
+export PAGER=more
