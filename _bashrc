@@ -48,3 +48,4 @@ alias ls="ls --color=auto"
 
 export PATH=$PATH:~/minishift
 export PAGER=more
+export EDITOR=vim
