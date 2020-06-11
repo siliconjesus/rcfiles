@@ -22,6 +22,9 @@ ORANGE="\[\033[1;31m\]"
 YELLOW="\[\033[1;33m\]"
 GREY="\[\033[0;37m\]"
 
+
+PENGUIN="🐧"
+
 if [[ $EUID == "0" ]];
 then
         USER_COLOR=$RED
@@ -41,6 +44,10 @@ export EDITOR=vim
 # Add aliases
 alias ls="ls --color=auto"
 
+if [ "$(uname) == "Linux" ] 
+then
+	PS1=$PENGUIN $PS1
+fi
 #Support for MacOS brew installation path of gnu utilities
 #if [ "$(uname)" == "Darwin" ] && [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
 #	PATH=/usr/local/bin;/usr/local/opt/coreutils/libexec/gnubin:$PATH
