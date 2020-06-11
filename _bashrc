@@ -44,9 +44,9 @@ export EDITOR=vim
 # Add aliases
 alias ls="ls --color=auto"
 
-if [ "$(uname) == "Linux" ] 
+if [ "$(uname)" == "Linux" ] 
 then
-	PS1=$PENGUIN $PS1
+	PS1="$PENGUIN $PS1"
 fi
 #Support for MacOS brew installation path of gnu utilities
 #if [ "$(uname)" == "Darwin" ] && [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
