@@ -77,7 +77,7 @@ alias ls="ls --color=auto"
 
 for PATHDIR in ~/minishift ~/.local/bin
 do
-        if [ -f $PATHDIR]
+        if [ -f $PATHDIR ]
         then
                 PATH=$PATHDIR:$PATH
         fi
