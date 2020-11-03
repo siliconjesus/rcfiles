@@ -77,7 +77,7 @@ alias ls="ls --color=auto"
 
 for PATHDIR in ~/minishift ~/.local/bin
 do
-        if [ -f $PATHDIR ]
+        if [ -d $PATHDIR ]
         then
                 PATH=$PATHDIR:$PATH
         fi
@@ -85,3 +85,4 @@ done
 
 export PAGER=more
 export EDITOR=vim
+export PATH
