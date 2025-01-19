@@ -7,4 +7,4 @@ You're free to use this as a starting point, or as a compliment to your existing
 so far in RHEL/CentOS 5,6,7,8 Ubuntu 12.04LTS to now, ArchLinux, SuSE and every other variant of Linux
 I've had access to and time to play with.  It works well with Solaris 6 -> 10 and OpenSolaris 11.  
 Lately I've been tweaking it to work with MacOSX and Windows10 bash shell.  I welcome input to these
-simple scripts at @siliconjesus on twitter.
+simple scripts at siliconjesus@gmail.com .
