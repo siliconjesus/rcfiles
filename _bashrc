@@ -61,17 +61,19 @@ PS1="$OSLOGO $GREEN[$USER_COLOR\u$CYAN@$YELLOW\h$GREEN] $ORANGE:$CYAN\w$GREY\$ $
 # previously aliased.
 
 unalias ll 2>/dev/null
+unalias l. 2>/dev/null
 unalias rm 2>/dev/null
 
 # Add aliases for ls
 alias ls="ls --color=auto"
 
+# systemd adds a bunch of mounts, supress them in df
+alias df="df -x tmpfs -x devtmpfs -x efivarfs"
+
 #Support for MacOS brew installation path of gnu utilities
 #if [ "$(uname)" == "Darwin" ] && [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
 #	PATH=/usr/local/bin;/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #fi
-
-# export PATH=$PATH:~/minishift
 
 #### Optional Paths ####
 
